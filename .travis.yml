@@ -44,7 +44,7 @@ jobs:
       install: skip
       before_script:
         - mysql -uroot < databases/create_databases.sql
-        - chmod +x gardlew
+        - chmod +x gradlew
         - ./gradlew testMigrate
       script:
         - APPLICATION=backlog
